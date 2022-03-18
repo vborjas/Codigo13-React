@@ -1,7 +1,9 @@
 // paso1: Importar useState
 import { useState } from "react";
-import Footer from "./Footer";
 import Header from "./Header";
+import Footer from "./Footer";
+import FormRegister from "./Form";
+import FormUser from "./FormUser";
 
 // El primer paso para definir un componente es el nombre
 // El nombre de un componente siempre debe iniciar en mayuscula
@@ -22,7 +24,7 @@ const PrimerComponente = () => {
   // de esta vairable usando useState
   // ojo el valor que va dentro de useState sera el valor inicial de la variable
 
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   // esta funcion retornar una vista
   // en react usamos return () para inidicar que lo que este dentro de los
@@ -32,28 +34,31 @@ const PrimerComponente = () => {
 
   // vamos a crear 2 funciones una para sumar y otra para restar
   // Estas 2 funciones esta cambiado el estado de la variable count
-  const sumar = () => setCount(count + 1);
+  // const sumar = () => setCount(count + 1);
 
-  const restar = () => setCount(count - 1);
+  // const restar = () => setCount(count - 1);
 
-  const parametros = (n1, n2) => {
-    setCount(n1 + n2);
-  };
+  // const parametros = (n1, n2) => {
+  //   setCount(n1 + n2);
+  // };
 
   return (
     <div>
       <Header />
-      <h1>Hola mundo</h1>
+      {/* <h1>Hola mundo</h1> */}
       <div>
-        <h4>Hola desde el componente {count}</h4>
+        {/* <h4>Hola desde el componente {count}</h4> */}
         {/* vamos a crear 2 botones uno para poder sumarle 1 a count y otro para restarle */}
-        <button onClick={sumar}>Sumar</button>
-        <button onClick={restar}>Restar</button>
+        {/* <button onClick={sumar}>Sumar</button> */}
+        {/* <button onClick={restar}>Restar</button> */}
         {/* Si queremos usar parentensis al momento de llamar a una funcion debemos primera
           ejecutarla como un callback */}
         {/* Ademas es la forma en el caso nuestra reciba algun parametro */}
-        <button onClick={() => parametros(10, 20)}>Restar</button>
+        {/* <button onClick={() => parametros(10, 20)}>Restar</button> */}
       </div>
+      <hr />
+      {/* <FormRegister /> */}
+      <FormUser />
       <Footer />
     </div>
   );
