@@ -10,8 +10,8 @@ describe("Mi primera prueba con cypress", () => {
   it("prueba home pokemon", () => {
     // aca vamos a verificar si es que nuestro home funciona o no
     //cy => cypress
-    // Esto va a entrar a localhost:3000 y decirno si funciona o no
-    cy.visit("https://codigo13-react2.vercel.app/");
+    // Esto va a entrar a https://codigo13-react-two.vercel.app/ y decirno si funciona o no
+    cy.visit("https://codigo13-react-two.vercel.app/");
     // contains
     // Esto sirve para poder buscar algun texto en nuestra pagina
     // que busque la palabra pokedex
@@ -28,7 +28,7 @@ describe("Mi primera prueba con cypress", () => {
 
   // vamos a crear a otra prueba para /flags
   it("pruebas para banderas", () => {
-    cy.visit("https://codigo13-react2.vercel.app/flags");
+    cy.visit("https://codigo13-react-two.vercel.app/flags");
     // vamos a ver como podemos escribir en un input
     // Estamos buscando el primero input y luego de encontrarlos
     // estamos escribiendo peru en dicho input
@@ -39,11 +39,11 @@ describe("Mi primera prueba con cypress", () => {
     });
   });
 
-  // Creeen una prueba para http://localhost:3000/youtube y
+  // Creeen una prueba para https://codigo13-react-two.vercel.app//youtube y
   // verifiquen si que existe un titulo NAME 33
 
   it("prueba de login", () => {
-    cy.visit("https://codigo13-react2.vercel.app/login");
+    cy.visit("https://codigo13-react-two.vercel.app/login");
     // ahora vamos a ver de que otra podemos acceder a los inputs
     // usando el name del inputs podemos encontrar uno especifico y
     // poder escribir en el
@@ -59,7 +59,7 @@ describe("Mi primera prueba con cypress", () => {
     cy.get('[name="gender"]').type("dc");
     cy.get('[name="video_link"]').type("www.google.com");
     cy.get('[name="wallpaper"]').type("www.google.com");
-   
+    cy.get(".btn-crear-movie").click();
     cy.contains("Hombre araña 2");
     // Eliminar la ultima pelicula que hemos agregado
     // recurden que estamos accediente al ultimo boton porque estamos usando .last()
