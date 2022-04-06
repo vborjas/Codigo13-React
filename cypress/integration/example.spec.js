@@ -59,7 +59,7 @@ describe("Mi primera prueba con cypress", () => {
     cy.get('[name="gender"]').type("dc");
     cy.get('[name="video_link"]').type("www.google.com");
     cy.get('[name="wallpaper"]').type("www.google.com");
-    cy.get(".btn-crear-movie").click();
+   
     cy.contains("Hombre araña 2");
     // Eliminar la ultima pelicula que hemos agregado
     // recurden que estamos accediente al ultimo boton porque estamos usando .last()
