@@ -6,15 +6,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 // Para poder importar un componente debos llamarlo por el nombre que fue exportado
-import PrimerComponente from "./App";
+// import PrimerComponente from "./App";
 // Por default el archivo que se exporta es index asi que no hace falta llamarlo
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+import App from "./App"
 
 ReactDOM.render(
   <React.StrictMode>
     {/* Para usar un componente debo tratarlo como si fuera una etiqueta HTML */}
     {/* <PrimerComponente /> */}
-    <Home />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

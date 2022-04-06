@@ -1,0 +1,32 @@
+.description {
+    width: 297px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #374151;
+  }
+  
+  .container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .price-tacched {
+    color: #9ca3af;
+    text-decoration: line-through;
+  }
+  
+  .button-basket {
+    text-transform: capitalize !important;
+  }
+
+  
+.product-photo {
+    width: 297px;
+    height: 400px;
+    object-fit: cover;
+  }
