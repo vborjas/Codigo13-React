@@ -19,7 +19,7 @@ describe("Mi primera prueba con cypress", () => {
     // ahora vamos a buscar el boton que diga Detalle del pokemon
     cy.contains("Detalle del pokemon").click();
     // Reto quiero que despues de abrir el modal busque la palabra Habilidades
-    cy.contains("Habilidades");
+    
     // Como cierro el modal?
     // Nota recuerden que el texto debe ser el mismo que esta nuestro codigo
     // cy.contains("CERRAR").click();
